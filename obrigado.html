@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recebemos seu pedido | Pedras Tricordiana</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.aviso{min-height:100vh;display:grid;place-items:center;background:var(--terra);color:var(--claro-txt);padding:40px 16px;text-align:center}
+.aviso__box{max-width:520px}
+.aviso img{margin:0 auto 40px;width:150px}
+.aviso p{color:var(--claro-sub)}
+.barra{height:3px;background:rgba(243,234,224,.15);border-radius:3px;overflow:hidden;margin:28px 0}
+.barra span{display:block;height:100%;width:0;background:var(--ouro);animation:enche 3s linear forwards}
+@keyframes enche{to{width:100%}}
+</style>
+<script>(function(w,d,s,l,i){if(i.indexOf('XXXX')>-1)return;w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+</head>
+<body>
+<main class="aviso">
+  <div class="aviso__box">
+    <img src="assets/img/logo-claro.svg" alt="Pedras Tricordiana" width="156" height="53">
+    <h1 class="h2">Recebemos seu pedido de orçamento</h1>
+    <p>Estamos abrindo o WhatsApp para você continuar a conversa com a nossa equipe.</p>
+    <div class="barra"><span></span></div>
+    <a id="ir" class="btn btn--ouro" href="https://wa.me/5535999798434">Abrir o WhatsApp agora</a>
+    <p style="margin-top:24px"><a href="./" style="color:var(--claro-sub)">Voltar para o site</a></p>
+  </div>
+</main>
+<script>
+(function(){
+  var padrao='Olá, acabei de preencher o formulário no site. Aguardo mais informações.';
+  var m=new URLSearchParams(location.search).get('m')||padrao;
+  var url='https://wa.me/5535999798434?text='+encodeURIComponent(m);
+  document.getElementById('ir').href=url;
+  window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'pagina_obrigado'});
+  setTimeout(function(){location.href=url;},3000);
+})();
+</script>
+</body>
+</html>
