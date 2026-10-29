@@ -39,8 +39,8 @@ assets/
 
 - Briefing do cliente (formulário QH4 Briefing + Site v2) e resumo comercial passado pelo Malta.
 - Descrições das pedras: textos do site atual pedrastricordiana.com.br/produtos.
-- Imagens: baixadas do site atual (slides, texturas, fotos por pedra, jazida, logo) + fotos do Instagram da pasta `02. Imagens`. Tudo salvo em `assets/img` como arquivo local: se o site antigo sair do ar, a LP continua igual. O zip original com as 77 imagens do site ficou em `02. Imagens`.
-- Atenção: as fotos de produto do site antigo são pequenas (284 px e 576 px). A LP exibe essas fotos em tamanho próximo do original para não estourar. Quando as filhas do Marcílio mandarem fotos/vídeos novos, vale trocar (mesmos nomes de arquivo em `assets/img`).
+- Imagens: banco de imagens enviado pelo cliente (pasta BANCO DE IMAGENS no Drive) para a seção do Travertino, o catálogo (Quartzito São Tomé, Hijau, Mosaico Português, Moledo), as texturas do hero, a seção de origem e o mosaico de obras. As demais pedras do catálogo usam fotos do site atual e do Instagram. Tudo salvo em `assets/img` como arquivo local, sem depender do site antigo.
+- Revisão 29/10/2026 (pedido do Tales): seção do Travertino e catálogo não repetem mais as mesmas fotos, e a foto de baixa qualidade da seção de origem foi trocada.
 - Não foram usados os depoimentos do site atual (nomes genéricos, sem fonte verificável) nem dados não presentes no briefing.
 - Cores da marca tiradas do logo/site: #3E342F, #D79753, #F9F3ED, #7A6855, #C5B9AC. Fontes: Archivo condensada (títulos, conversa com o letreiro do logo) + DM Sans (corpo, a mesma do site atual).
 

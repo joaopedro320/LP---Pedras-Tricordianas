@@ -18,11 +18,12 @@
   /* ===== Catálogo (textos do site oficial da Pedras Tricordiana) ===== */
   var PEDRAS = [
     { slug: 'travertino', nome: 'Travertino Bege Bahia', fotos: 7, desc: 'Pedra de luxo com beleza atemporal. Os tons de bege e a textura única fazem dela uma escolha refinada para pisos, revestimentos de parede e elementos de design de interiores.' },
-    { slug: 'quartzito', nome: 'Quartzito São Tomé', fotos: 5, desc: 'Pedra de elegância natural, conhecida pela resistência e versatilidade. Com variedade de cores e texturas, é perfeita para aplicações internas e externas.' },
+    { slug: 'quartzito', nome: 'Quartzito São Tomé', fotos: 7, desc: 'Pedra de elegância natural, conhecida pela resistência e versatilidade. Com variedade de cores e texturas, é perfeita para aplicações internas e externas.' },
     { slug: 'moledo', nome: 'Moledo', fotos: 7, desc: 'Opção encantadora para projetos que buscam aparência rústica e acolhedora. Tonalidades suaves e textura agradável para áreas de lazer, jardins e convivência.' },
     { slug: 'ferro', nome: 'Pedra Ferro', fotos: 5, desc: 'Robusta e resistente, perfeita para ambientes que exigem durabilidade. Tonalidade sóbria e textura marcante, ideal para calçadas e áreas de lazer.' },
     { slug: 'hitam', nome: 'Hitam', fotos: 5, desc: 'Escolha contemporânea que traz elegância e exclusividade ao revestimento. Cor preta e superfície polida para ambientes modernos e sofisticados.' },
-    { slug: 'hijau', nome: 'Hijau', fotos: 5, desc: 'Importada da Indonésia, uma pedra exótica com toque de beleza tropical. Verde intenso e textura única para ambientes sofisticados.' },
+    { slug: 'hijau', nome: 'Hijau', fotos: 7, desc: 'Importada da Indonésia, uma pedra exótica com toque de beleza tropical. Verde intenso e textura única para ambientes sofisticados.' },
+    { slug: 'mosaico', nome: 'Mosaico Português', fotos: 7, desc: 'Uma expressão artística em pedra. Com padrões e cores variadas, é usado em áreas de destaque como pisos, paredes e projetos artísticos.' },
     { slug: 'miracema', nome: 'Miracema', fotos: 5, desc: 'Conhecida pela rusticidade e resistência. Com superfície antiderrapante, vai bem em áreas de alto tráfego como calçadas, piscinas e áreas externas.' },
     { slug: 'bossa-nova', nome: 'Bossa Nova', fotos: 5, desc: 'Pedra sofisticada que combina textura e elegância. Variações de tons e padrões para projetos que buscam um toque artístico e exclusivo.' },
     { slug: 'aquamarine', nome: 'Aquamarine', fotos: 5, desc: 'Tonalidade de azul suave que lembra águas cristalinas. Perfeita para áreas de piscina e ambientes que pedem serenidade.' },
@@ -45,12 +46,12 @@
     nomeEl.textContent = p.nome;
     descEl.textContent = p.desc;
     catCta.setAttribute('data-pedra-cta', p.nome);
-    var html = '<img class="cat__largo" src="' + src(p.slug, 1) + '" alt="' + p.nome + ' aplicada em ambiente" width="576" height="285">';
+    var html = '<img class="cat__largo" src="' + src(p.slug, 1) + '" alt="' + p.nome + ', foto 1" width="1200" height="600">';
     var total = Math.min(p.fotos, 7);
-    for (var n = 2; n <= total; n++) html += '<img src="' + src(p.slug, n) + '" alt="' + p.nome + ', foto ' + n + '" width="284" height="284" loading="lazy">';
+    for (var n = 2; n <= total; n++) html += '<img src="' + src(p.slug, n) + '" alt="' + p.nome + ', foto ' + n + '" width="300" height="300" loading="lazy">';
     fotos.innerHTML = html;
     var q = total - 1;
-    fotos.style.gridTemplateColumns = 'repeat(' + (q % 3 === 0 ? 3 : (q === 4 ? 4 : 2)) + ',1fr)';
+    fotos.style.gridTemplateColumns = 'repeat(' + (q <= 4 ? q : 3) + ',1fr)';
     if (foco) lista.querySelectorAll('button')[i].focus();
   }
 
@@ -67,7 +68,7 @@
     var o = document.createElement('option'); o.textContent = p.nome; selPedra.appendChild(o);
   });
   ['Outra pedra', 'Ainda não sei, quero indicação'].forEach(function (t) { var o = document.createElement('option'); o.textContent = t; selPedra.appendChild(o); });
-  mostra(0);
+  mostra(1);
 
   /* ===== Mostruário do hero ===== */
   var amostras = document.querySelectorAll('.amostra');
