@@ -18,7 +18,7 @@
   /* ===== Catálogo (textos do site oficial da Pedras Tricordiana) ===== */
   var PEDRAS = [
     { slug: 'travertino', nome: 'Travertino Bege Bahia', fotos: 7, desc: 'Pedra de luxo com beleza atemporal. Os tons de bege e a textura única fazem dela uma escolha refinada para pisos, revestimentos de parede e elementos de design de interiores.' },
-    { slug: 'quartzito', nome: 'Quartzito São Tomé', fotos: 7, desc: 'Pedra de elegância natural, conhecida pela resistência e versatilidade. Com variedade de cores e texturas, é perfeita para aplicações internas e externas.' },
+    { slug: 'quartzito', nome: 'Granito Rústico', fotos: 7, desc: 'Pedra de elegância natural, conhecida pela resistência e versatilidade. Com variedade de cores e texturas, é perfeita para aplicações internas e externas.' },
     { slug: 'moledo', nome: 'Moledo', fotos: 7, desc: 'Opção encantadora para projetos que buscam aparência rústica e acolhedora. Tonalidades suaves e textura agradável para áreas de lazer, jardins e convivência.' },
     { slug: 'ferro', nome: 'Pedra Ferro', fotos: 5, desc: 'Robusta e resistente, perfeita para ambientes que exigem durabilidade. Tonalidade sóbria e textura marcante, ideal para calçadas e áreas de lazer.' },
     { slug: 'hitam', nome: 'Hitam', fotos: 5, desc: 'Escolha contemporânea que traz elegância e exclusividade ao revestimento. Cor preta e superfície polida para ambientes modernos e sofisticados.' },
