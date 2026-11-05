@@ -29,7 +29,7 @@ assets/
 
 ## Pendências antes de publicar
 
-- [ ] **GTM**: trocar `GTM-XXXXXXX` em `index.html` (head e noscript) e em `obrigado.html`. Enquanto estiver com XXXX o GTM não carrega.
+- [x] **GTM**: `GTM-T2R4Z2BX` instalado em `index.html` (head e noscript) e em `obrigado.html`.
 - [ ] **Domínio / canonical**: hoje está `https://pedrastricordiana.com.br/` (canonical, Open Graph, JSON-LD, sitemap e robots). Se a LP for para outro domínio ou subdomínio, trocar em todos.
 - [ ] **WhatsApp**: (35) 9 9979-8434 (do briefing). Para trocar, edite `WHATSAPP` em `assets/js/main.js`, o link do botão flutuante e do rodapé em `index.html` e `obrigado.html`.
 - [ ] **Apps Script** (opcional): cole a URL do Web App em `APPS_SCRIPT_URL` no `main.js`. Com URL: envia os dados, abre a página de obrigado e o WhatsApp com a mensagem padrão. Sem URL: monta a mensagem com todos os campos e manda direto pro WhatsApp (via página de obrigado).
