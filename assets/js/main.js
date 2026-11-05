@@ -18,6 +18,7 @@
   /* ===== Catálogo (textos do site oficial da Pedras Tricordiana) ===== */
   var PEDRAS = [
     { slug: 'travertino', nome: 'Travertino Bege Bahia', fotos: 7, desc: 'Pedra de luxo com beleza atemporal. Os tons de bege e a textura única fazem dela uma escolha refinada para pisos, revestimentos de parede e elementos de design de interiores.' },
+    { slug: 'sao-tome', nome: 'Pedra São Tomé', fotos: 5, desc: 'Extraída em São Tomé das Letras, a pedra que deu origem à nossa história. Superfície naturalmente antiderrapante e térmica, com tons claros e veios dourados, ideal para bordas de piscina, áreas externas, calçadas e revestimentos.' },
     { slug: 'quartzito', nome: 'Granito Rústico', fotos: 7, desc: 'Pedra de elegância natural, conhecida pela resistência e versatilidade. Com variedade de cores e texturas, é perfeita para aplicações internas e externas.' },
     { slug: 'moledo', nome: 'Moledo', fotos: 7, desc: 'Opção encantadora para projetos que buscam aparência rústica e acolhedora. Tonalidades suaves e textura agradável para áreas de lazer, jardins e convivência.' },
     { slug: 'ferro', nome: 'Pedra Ferro', fotos: 5, desc: 'Robusta e resistente, perfeita para ambientes que exigem durabilidade. Tonalidade sóbria e textura marcante, ideal para calçadas e áreas de lazer.' },
@@ -68,7 +69,7 @@
     var o = document.createElement('option'); o.textContent = p.nome; selPedra.appendChild(o);
   });
   ['Outra pedra', 'Ainda não sei, quero indicação'].forEach(function (t) { var o = document.createElement('option'); o.textContent = t; selPedra.appendChild(o); });
-  mostra(1);
+  mostra(2);
 
   /* ===== Mostruário do hero ===== */
   var amostras = document.querySelectorAll('.amostra');
